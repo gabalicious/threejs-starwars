@@ -5,7 +5,7 @@ import { setupModel } from './setupModel.js';
 async function loadShip(shipName) {
     const loader = new GLTFLoader();
     console.log(`/models/${shipName}/scene.gltf`)
-    const shipData = await loader.loadAsync(`/models/${shipName}/scene.gltf`)
+    const shipData = await loader.loadAsync(`${process.env.root}models/${shipName}/scene.gltf`)
     // console.log('ship', shipData)
     const ship = setupModel(shipData);
     ship.position.set(0, 0, 0);

@@ -128,7 +128,7 @@ document.body.appendChild( this.stats.dom );
             );
             this.starGeo.vertices.push(star);
         }
-        const sprite = new TextureLoader().load('star.png');
+        const sprite = new TextureLoader().load(`${process.env.root}star.png`);
         const starMaterial = new PointsMaterial({
             color: 0xffffff,
             fog: true,
