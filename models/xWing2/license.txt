@@ -1,0 +1,11 @@
+Model Information:
+* title:	X-wing starfighter | T-65C-A2
+* source:	https://sketchfab.com/3d-models/x-wing-starfighter-t-65c-a2-2397144aa2314e8fb03bf131d8f56af4
+* author:	Alana G (https://sketchfab.com/alanaguidry05)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "X-wing starfighter | T-65C-A2" (https://sketchfab.com/3d-models/x-wing-starfighter-t-65c-a2-2397144aa2314e8fb03bf131d8f56af4) by Alana G (https://sketchfab.com/alanaguidry05) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

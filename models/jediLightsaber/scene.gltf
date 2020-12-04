@@ -1,0 +1,426 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 11344,
+      "max": [
+        69.774871826171875,
+        4.6535220146179199,
+        16.559122085571289
+      ],
+      "min": [
+        -118.30618286132812,
+        -28.464714050292969,
+        -16.559112548828125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 136128,
+      "componentType": 5126,
+      "count": 11344,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 11344,
+      "max": [
+        0.30907058715820312,
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 22338,
+      "max": [
+        11343
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 272256,
+      "componentType": 5126,
+      "count": 410,
+      "max": [
+        10.540030479431152,
+        10.379982948303223,
+        8.2537124399095774e-05
+      ],
+      "min": [
+        -10.539971351623535,
+        -10.379767417907715,
+        -592.3292236328125
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 277176,
+      "componentType": 5126,
+      "count": 410,
+      "max": [
+        1,
+        0.99518483877182007,
+        5.2233217751052052e-09
+      ],
+      "min": [
+        -1,
+        -0.99518483877182007,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 181504,
+      "componentType": 5126,
+      "count": 410,
+      "max": [
+        1,
+        1,
+        0.049125649034976959,
+        1
+      ],
+      "min": [
+        -0.9999535083770752,
+        -1,
+        -0.049125630408525467,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 188064,
+      "componentType": 5126,
+      "count": 410,
+      "max": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 89352,
+      "componentType": 5125,
+      "count": 1980,
+      "max": [
+        409
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "RealityDaemon (https://sketchfab.com/arju)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/e5e0e37ed03a425aa6455fb11dc8e61a",
+      "title": "Jedi Consular's Lightsaber"
+    },
+    "generator": "Sketchfab-3.18.5",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 97272,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 282096,
+      "byteOffset": 97272,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 194624,
+      "byteOffset": 379368,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 573992,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Metal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.17534715040000001,
+          0.17534715040000001,
+          0.17534715040000001,
+          1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "name": "Wall_Paint",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0050976149999999998,
+          1,
+          0,
+          0.083650914600000001
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Hilt_Metal_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cylinder001_Wall Paint_0",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 7,
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TANGENT": 6
+          },
+          "indices": 8,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.52811825275421143,
+        -0.029105562716722488,
+        0.84867191314697266,
+        0,
+        -0.024327073246240616,
+        0.99848365783691406,
+        0.049381863325834274,
+        0,
+        -0.84882229566574097,
+        -0.046725168824195862,
+        0.52660942077636719,
+        0,
+        195.22198486328125,
+        11.968382835388184,
+        -325.21881103515625,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "a832a85b108b49ad8773094a04fa826f.fbx"
+    },
+    {
+      "children": [
+        4,
+        7
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.99999999999998668,
+        1.6292068494294582e-07,
+        0,
+        0,
+        -1.6292068494294582e-07,
+        0.99999999999998668,
+        0,
+        118.56854248046875,
+        12.942465782165527,
+        2.5998067485488718e-06,
+        1
+      ],
+      "name": "Hilt"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1,
+        0,
+        -0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        11.905594825744629,
+        -1.4192575008564745e-06,
+        1
+      ],
+      "name": ""
+    },
+    {
+      "mesh": 0,
+      "name": "Hilt_Metal_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        1.6292068460987963e-07,
+        0,
+        0.99999999999998668,
+        0,
+        -4.3711388225504991e-08,
+        0.999999999999999,
+        7.1214892959639279e-15,
+        0,
+        -0.99999999999998579,
+        -4.3711388225505573e-08,
+        1.6292068460987963e-07,
+        0,
+        188.26498413085938,
+        12.944137573242188,
+        0.041484404355287552,
+        1
+      ],
+      "name": "Cylinder001"
+    },
+    {
+      "mesh": 1,
+      "name": "Cylinder001_Wall Paint_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
