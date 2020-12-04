@@ -42555,8 +42555,8 @@ var _setupModel = require("./setupModel.js");
 
 async function loadShip(shipName) {
   const loader = new _GLTFLoader.GLTFLoader();
-  console.log("/models/".concat(shipName, "/scene.gltf"));
-  const shipData = await loader.loadAsync("/models/".concat(shipName, "/scene.gltf")); // console.log('ship', shipData)
+  console.log(`/models/${shipName}/scene.gltf`);
+  const shipData = await loader.loadAsync(`${"/"}models/${shipName}/scene.gltf`); // console.log('ship', shipData)
 
   const ship = (0, _setupModel.setupModel)(shipData);
   ship.position.set(0, 0, 0);
@@ -43607,7 +43607,7 @@ class Game {
       this.starGeo.vertices.push(star);
     }
 
-    const sprite = new _three.TextureLoader().load('star.png');
+    const sprite = new _three.TextureLoader().load(`${"/"}star.png`);
     const starMaterial = new _three.PointsMaterial({
       color: 0xffffff,
       fog: true,
@@ -43648,6 +43648,8 @@ class Game {
   }
 
   gamepad() {
+    var _gp, _gp$axes, _gp3, _gp3$axes, _gp5, _gp5$axes, _gp7, _gp7$axes;
+
     // one of the apis are supported and controller is plugged in
     let gp;
 
@@ -43663,20 +43665,28 @@ class Game {
         rightStickX = 0,
         rightStickY = 0;
 
-    if (gp?.axes?.[0] !== 0) {
-      leftStickX -= gp?.axes?.[0] || 0; // console.log(`leftStickX ${leftStickX}`);
+    if (((_gp = gp) === null || _gp === void 0 ? void 0 : (_gp$axes = _gp.axes) === null || _gp$axes === void 0 ? void 0 : _gp$axes[0]) !== 0) {
+      var _gp2, _gp2$axes;
+
+      leftStickX -= ((_gp2 = gp) === null || _gp2 === void 0 ? void 0 : (_gp2$axes = _gp2.axes) === null || _gp2$axes === void 0 ? void 0 : _gp2$axes[0]) || 0; // console.log(`leftStickX ${leftStickX}`);
     }
 
-    if (gp?.axes?.[1] !== 0) {
-      leftStickY += gp?.axes?.[1] || 0; // console.log(`leftStickY ${leftStickY}`);
+    if (((_gp3 = gp) === null || _gp3 === void 0 ? void 0 : (_gp3$axes = _gp3.axes) === null || _gp3$axes === void 0 ? void 0 : _gp3$axes[1]) !== 0) {
+      var _gp4, _gp4$axes;
+
+      leftStickY += ((_gp4 = gp) === null || _gp4 === void 0 ? void 0 : (_gp4$axes = _gp4.axes) === null || _gp4$axes === void 0 ? void 0 : _gp4$axes[1]) || 0; // console.log(`leftStickY ${leftStickY}`);
     }
 
-    if (gp?.axes?.[2] !== 0) {
-      rightStickX += gp?.axes?.[2] || 0; // console.log(`rightStickX ${rightStickX}`);
+    if (((_gp5 = gp) === null || _gp5 === void 0 ? void 0 : (_gp5$axes = _gp5.axes) === null || _gp5$axes === void 0 ? void 0 : _gp5$axes[2]) !== 0) {
+      var _gp6, _gp6$axes;
+
+      rightStickX += ((_gp6 = gp) === null || _gp6 === void 0 ? void 0 : (_gp6$axes = _gp6.axes) === null || _gp6$axes === void 0 ? void 0 : _gp6$axes[2]) || 0; // console.log(`rightStickX ${rightStickX}`);
     }
 
-    if (gp?.axes?.[3] !== 0) {
-      rightStickY -= gp?.axes?.[3] || 0; // console.log(`rightStickY ${rightStickY}`);
+    if (((_gp7 = gp) === null || _gp7 === void 0 ? void 0 : (_gp7$axes = _gp7.axes) === null || _gp7$axes === void 0 ? void 0 : _gp7$axes[3]) !== 0) {
+      var _gp8, _gp8$axes;
+
+      rightStickY -= ((_gp8 = gp) === null || _gp8 === void 0 ? void 0 : (_gp8$axes = _gp8.axes) === null || _gp8$axes === void 0 ? void 0 : _gp8$axes[3]) || 0; // console.log(`rightStickY ${rightStickY}`);
     }
 
     if (leftStickX !== 0 || leftStickY !== 0 || rightStickX !== 0 || rightStickY !== 0) {// console.log(`a ${a} b ${b}`);
@@ -43810,7 +43820,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63418" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53452" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
