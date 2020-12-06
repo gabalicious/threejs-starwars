@@ -1,12 +1,12 @@
-// import model from "./load3d";
 import * as dat from 'dat.gui';
-
-
 import { Game } from './Game/Game.js';
+import { RenderControllerMap } from './react-components/gameControllerMap.js'
+
 
 async function main() {
   const container = document.querySelector('#scene');
   const game = new Game(container);
+  // Attach game to window for debugging in console
   window.game = game
   await game.init();
 
@@ -44,6 +44,8 @@ function addDatGui() {
 
 }
 
+
+
 const button = document.querySelector('.menu-container .menu-item');
 
 button.addEventListener('click', event => {
@@ -54,8 +56,8 @@ button.addEventListener('click', event => {
 function run() {
 
   addDatGui()
+  RenderControllerMap();
   var menu = document.getElementsByClassName("menu-container")[0];
-
   menu.style.display = "none";
 
   main().catch((err) => {
