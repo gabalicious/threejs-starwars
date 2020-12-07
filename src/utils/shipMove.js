@@ -19,7 +19,7 @@ function move(count, direction) {
     return [count, direction]
 }
 
-function playerActions(ship, buttonIndex, button, game) {
+function playerActions(ship, buttonIndex, game, button={value: 1}) {
     // move forward
     if (buttonIndex === 7) {
         ship.position.z = ship.position.z + (1 * button.value)

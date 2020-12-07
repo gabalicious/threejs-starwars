@@ -117,7 +117,24 @@ document.body.appendChild( this.stats.dom );
 
 
     }
+addKeyboardEvents(){
+    document.addEventListener("keydown", (event)=>{
+            console.log(event.which)
+    var keyCode = event.which;
+    if (keyCode == 87) {
+        playerActions(this.ship, 7, this )
+    } else if (keyCode == 83) {
+        playerActions(this.ship, 6, this )
+    } else if (keyCode == 65) {
+        // cube.position.x -= xSpeed;
+    } else if (keyCode == 68) {
+        // cube.position.x += xSpeed;
+    } else if (keyCode == 32) {
+        playerActions(this.ship, 0, this )
+    }
+    }, false);
 
+}
     drawSpace() {
         this.starGeo = new Geometry();
         for (let i = 0; i < 6000; i++) {
@@ -214,7 +231,7 @@ document.body.appendChild( this.stats.dom );
             for (const [index, button] of gamepad.buttons.entries()) {
                 if (button.touched || button.pressed) {
                     console.log('button.touched', button, index)
-                    playerActions(this.ship, index, button, this)
+                    playerActions(this.ship, index,  this, button)
                 }
             }
         }
@@ -247,6 +264,7 @@ document.body.appendChild( this.stats.dom );
                 e.gamepad.index, e.gamepad.id,
                 e.gamepad.buttons.length, e.gamepad.axes.length);
         });
+        this.addKeyboardEvents()
         this.animate()
     }
 }
